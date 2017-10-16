@@ -1,13 +1,9 @@
 #! /usr/bin/env python
 
 import json
+import sys
 from datetime import datetime
 
-def main():
-
-    print(json.dumps({
-        'version': datetime.isoformat(datetime.now())
-    }))
-
-if __name__ == '__main__':
-    main()
+sys.stdout.write(json.dumps({
+    'version': datetime.isoformat(datetime.now())
+}))
