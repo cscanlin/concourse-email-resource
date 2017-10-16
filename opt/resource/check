@@ -6,8 +6,7 @@ from datetime import datetime
 def main():
 
     print(json.dumps({
-        'version': datetime.isoformat(datetime.now()),
-        'metadata': []
+        'version': datetime.isoformat(datetime.now())
     }))
 
 if __name__ == '__main__':
