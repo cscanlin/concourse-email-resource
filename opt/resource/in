@@ -44,11 +44,7 @@ j = convert(j)
 version = j['version']
 
 result = {
-    "version": version,
-    "metadata": []
+    "version": version
 }
 
 sys.stdout.write(json.dumps(result))
-
-if __name__ == '__main__':
-    get(sys.argv[1])
