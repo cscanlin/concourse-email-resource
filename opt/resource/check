@@ -4,6 +4,6 @@ import json
 import sys
 from datetime import datetime
 
-sys.stdout.write(json.dumps({
+sys.stdout.write(json.dumps([{
     'version': datetime.isoformat(datetime.now())
-}))
+}]))
