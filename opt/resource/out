@@ -16,7 +16,7 @@ import time
 
 from inlinestyler.utils import inline_css
 from jinja2 import Template
-
+import common
 from common import get_payload
 
 
@@ -47,7 +47,7 @@ def put(src):
             time.sleep(1)
 
     print(json.dumps({
-        'version': {'version': datetime.isoformat(datetime.now())},
+        'version': {'version': common.get_version()},
         'metadata': [
             {'name': 'subject', 'value': subject},
         ]

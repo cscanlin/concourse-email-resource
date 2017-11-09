@@ -2,7 +2,7 @@ import json
 import sys
 import tempfile
 
-VERSION = 1.0
+VERSION = '1.0'
 
 def get_payload():
     payload = json.load(sys.stdin)
