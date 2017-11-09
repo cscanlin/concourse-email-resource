@@ -2,6 +2,7 @@ import json
 import sys
 import tempfile
 
+VERSION = 1.0
 
 def get_payload():
     payload = json.load(sys.stdin)
@@ -10,3 +11,6 @@ def get_payload():
     with open(fname, 'w') as fp:
         fp.write(json.dumps(payload))
     return payload
+
+def get_version():
+	return VERSION

@@ -2,8 +2,9 @@
 
 import json
 import sys
+import common
 from datetime import datetime
 
 sys.stdout.write(json.dumps([{
-    'version': datetime.isoformat(datetime.now())[0:10]
+    'version': common.get_version()
 }]))
