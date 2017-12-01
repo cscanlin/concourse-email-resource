@@ -28,7 +28,7 @@ def put(src):
     subject = get_subject(src, payload, template_vars)
     body = get_message(src, payload, template_vars)
 
-    message = MIMEMultipart('alternative')
+    message = MIMEMultipart()
     if mime_subtype == 'html':
         message.attach(MIMEText(html2text(body), 'plain'))
     else:
